@@ -13,35 +13,59 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CSS Custom Color -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'hockeys-color-primary': '#FF4240',
-            'hockeys-color-dark': '#131318',
-          }
-        }
-      }
-    }
-  </script>
-
   <!-- DaisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5a35b6a23c.js" crossorigin="anonymous"></script>
+
   <!-- Internal Styles -->
   <style>
-    font-manrope {
+    .font-manrope {
       font-family: 'Manrope', sans-serif;
     }
   </style>
 
 </head>
 
-<body>
-
+<body class="font-manrope w-11/12 lg:w-4/5 mx-auto">
+  <header>
+    <!-- Navbar Start -->
+    <div class="navbar bg-base-100 lg:my-10 mb-6">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex gap-11 font-bold">
+        <ul class="menu-horizontal px-1 gap-11 text-base te">
+          <li><a class="hover:text-red-500 cursor-pointer">Home</a></li>
+          <li><a class="hover:text-red-500 cursor-pointer">About</a></li>
+          <li><a class="hover:text-red-500 cursor-pointer">Pages</a></li>
+          <li><a class="hover:text-red-500 cursor-pointer">Blog</a></li>
+          <li><a class="hover:text-red-500 cursor-pointer">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <i class="fa-solid fa-magnifying-glass mr-6 text-gray-500 hidden lg:inline"></i>
+        <a class="btn bg-red-500 hover:bg-red-700 text-white px-6">Get Ticket</a>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
